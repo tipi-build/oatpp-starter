@@ -10,9 +10,9 @@
  *  Data Transfer Object. Object containing fields only.
  *  Used in API for serialization/deserialization and validation
  */
-class MyDto : public oatpp::DTO {
+class Dto : public oatpp::DTO {
   
-  DTO_INIT(MyDto, DTO)
+  DTO_INIT(Dto, DTO)
   
   DTO_FIELD(Int32, statusCode);
   DTO_FIELD(String, message);

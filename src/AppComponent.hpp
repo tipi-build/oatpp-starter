@@ -1,6 +1,8 @@
 #ifndef AppComponent_hpp
 #define AppComponent_hpp
 
+#include "SwaggerComponent.hpp"
+
 #include "oatpp/web/server/HttpConnectionHandler.hpp"
 
 #include "oatpp/network/tcp/server/ConnectionProvider.hpp"
@@ -9,6 +11,7 @@
 
 #include "oatpp/core/macro/component.hpp"
 
+
 /**
  *  Class which creates and holds Application components and registers components in oatpp::base::Environment
  *  Order of components initialization is from top to bottom
@@ -16,6 +19,8 @@
 class AppComponent {
 public:
   
+  SwaggerComponent swaggerComponent;
+
   /**
    *  Create ConnectionProvider component which listens on the port
    */

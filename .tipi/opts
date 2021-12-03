@@ -1,0 +1,3 @@
+add_definitions(
+  -DOATPP_SWAGGER_RES_PATH="./swagger-res"
+)

@@ -22,9 +22,15 @@ public:
     : oatpp::web::server::api::ApiController(objectMapper)
   {}
 public:
-  
+
+  ENDPOINT_INFO(root) {
+    info->summary = "Greets the world! ";
+
+    info->addResponse<Object<Dto>>(Status::CODE_200, "application/json");
+    //info->addSecurityRequirement("bearer");
+  } 
   ENDPOINT("GET", "/", root) {
-    auto dto = MyDto::createShared();
+    auto dto = Dto::createShared();
     dto->statusCode = 200;
     dto->message = "Hello World!";
     return createDtoResponse(Status::CODE_200, dto);
