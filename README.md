@@ -2,6 +2,11 @@
 
 Starter project of a simple web app with oat++ (AKA oatpp) application. Based on oatpp Multithreaded (Simple) API.
 
+See more:
+
+- [Oat++ Website](https://oatpp.io/)
+- [Oat++ Github Repository](https://github.com/oatpp/oatpp)
+
 ### Build and Run
 
 #### Using tipi.build
