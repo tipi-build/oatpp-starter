@@ -12,7 +12,7 @@ See more:
 #### Using tipi.build
 
 ```
-tipi build . -t linux --sync-build
+tipi . -t linux --test all -j1 --monitor
 tipi run build/remote/linux/bin/src/App
 ```
 

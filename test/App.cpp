@@ -9,7 +9,6 @@
 #include <iostream>
 
 void run() {
-
   /* Register Components in scope of run() method */
   AppComponent components;
 
@@ -34,6 +33,7 @@ void run() {
 
   /* Print info about server port */
   OATPP_LOGI("MyApp", "Server running on port %s", connectionProvider->getProperty("port").getData());
+  OATPP_LOGI("MyApp", " http://localhost:%s", connectionProvider->getProperty("port").getData());
 
   /* Run server */
   server.run();
@@ -56,6 +56,6 @@ int main(int argc, const char * argv[]) {
   std::cout << "objectsCreated = " << oatpp::base::Environment::getObjectsCreated() << "\n\n";
   
   oatpp::base::Environment::destroy();
-  
+    
   return 0;
 }
