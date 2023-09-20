@@ -1,8 +1,8 @@
 {
 
-  "oatpp/oatpp-swagger" : { "@" : "1.3.0",
+  "oatpp/oatpp-swagger" : { "@" : "1.3.0",  "x": ["test"],
     "requires" : {
-      "oatpp/oatpp" : { "@" : "1.3.0" }
+      "oatpp/oatpp" : { "@" : "1.3.0", "x": ["test"] }
     }
   }
 }
